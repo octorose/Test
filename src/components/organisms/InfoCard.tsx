@@ -42,8 +42,8 @@ export const InfoCard: React.FC = () => (
 
       {/* Actions Section */}
       <div className="flex justify-end gap-3 pt-4">
-        <Button className="px-6 py-2">
-          Button
+        <Button className="px-6 py-2" onClick={() => {window.location.href = '/modification-requests'}}>
+        Component2
         </Button>
         <button className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
           <div className="text-4xl text-primary">⋯</div>
@@ -91,9 +91,9 @@ export const InfoCard: React.FC = () => (
       {/* Third Div - Buttons positioned at bottom right */}
       <div className="flex flex-col justify-end">
         <div className="flex gap-3">
-          <Button className="px-6 py-2">
-            Button
-          </Button>
+          <Button className="px-6 py-2"onClick={() => {window.location.href = '/modification-requests'}}>
+          Component2
+        </Button>
           <button className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-slate-200 transition">
             <div className="text-4xl text-primary">⋯</div>
           </button>
