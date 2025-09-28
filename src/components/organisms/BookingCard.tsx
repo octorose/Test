@@ -1,6 +1,10 @@
 import React from "react";
 import { RouteRow, BookingMeta, Button } from "@/components";
 import type { BookingCardProps } from "@/types";
+import warehouseImg from "@/assets/warehouse.png";
+import candidateImg from "@/assets/candidate.png";
+import groupImg from "@/assets/group.png";
+import cmaImg from "@/assets/CMA.svg";
 
 export const BookingCard: React.FC<BookingCardProps> = ({ data, onManage }) => (
         <article className="rounded-2xl bg-white p-4 md:p-6 shadow-md ring-1 ring-slate-100 relative">
@@ -9,7 +13,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({ data, onManage }) => (
             <div className="flex items-centertext-sm text-slate-600">
               <div className="w-6 h-6 rounded flex items-center justify-center">
                 <img 
-                  src="/src/assets/warehouse.png" 
+                  src={warehouseImg} 
                   alt="Warehouse" 
                   width={20} 
                   height={20}
@@ -21,7 +25,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({ data, onManage }) => (
             <div className="flex items-center  text-sm text-slate-600">
               <div className="w-6 h-6 rounded flex items-center justify-center">
                 <img 
-                  src="/src/assets/candidate.png" 
+                  src={candidateImg} 
                   alt="Candidate" 
                   width={20} 
                   height={20}
@@ -33,7 +37,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({ data, onManage }) => (
             <div className="flex items-center text-sm text-slate-600">
               <div className="w-6 h-7  rounded flex items-center justify-center relative">
                 <img 
-                  src="/src/assets/group.png" 
+                  src={groupImg} 
                   alt="Group" 
                   width={40} 
                   height={40}
@@ -45,7 +49,7 @@ export const BookingCard: React.FC<BookingCardProps> = ({ data, onManage }) => (
               </div>
             </div>
             <img 
-              src="/src/assets/CMA.svg" 
+              src={cmaImg} 
               alt="CMA CGM" 
               width={60} 
               height={20}

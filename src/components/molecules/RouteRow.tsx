@@ -1,11 +1,13 @@
 import React from "react";
 import type { RouteRowProps } from "@/types";
+import boatImg from "@/assets/Boat.png";
+import mapPinImg from "@/assets/map-pin.png";
 
 export const RouteRow: React.FC<RouteRowProps> = ({ from, to, dateLabel, id }) => (
   <div className="space-y-3">
     <div className="flex items-center gap-2">
       <img 
-        src="/src/assets/Boat.png" 
+        src={boatImg} 
         alt="Boat" 
         width={12} 
         height={12}
@@ -28,7 +30,7 @@ export const RouteRow: React.FC<RouteRowProps> = ({ from, to, dateLabel, id }) =
       </div>
       <div className="flex items-center gap-2">
         <img 
-          src="/src/assets/map-pin.png" 
+          src={mapPinImg} 
           alt="Map Pin" 
           width={16} 
           height={16}
